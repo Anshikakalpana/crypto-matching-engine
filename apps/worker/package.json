@@ -1,0 +1,9 @@
+{
+  "name": "@cme/worker",
+  "version": "0.1.0",
+  "main": "src/trade-persistence-worker.ts",
+  "dependencies": {
+    "@cme/shared": "workspace:*",
+    "@cme/database": "workspace:*"
+  }
+}

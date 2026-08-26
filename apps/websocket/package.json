@@ -1,0 +1,8 @@
+{
+  "name": "@cme/websocket",
+  "version": "0.1.0",
+  "main": "src/market-data-server.ts",
+  "dependencies": {
+    "@cme/shared": "workspace:*"
+  }
+}

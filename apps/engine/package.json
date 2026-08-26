@@ -1,0 +1,8 @@
+{
+  "name": "@cme/engine",
+  "version": "0.1.0",
+  "main": "src/matching-engine.ts",
+  "dependencies": {
+    "@cme/shared": "workspace:*"
+  }
+}

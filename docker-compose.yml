@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:16
+    # TODO: env, volumes, healthcheck
+  redis:
+    image: redis:7
+    # TODO: config for Lua scripting support (default image is fine)
+  api:
+    build: ./apps/api
+    # TODO
+  worker:
+    build: ./apps/worker
+    # TODO
+  websocket:
+    build: ./apps/websocket
+    # TODO

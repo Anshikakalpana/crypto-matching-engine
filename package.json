@@ -1,0 +1,15 @@
+{
+  "name": "crypto-matching-engine",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "echo dev script not wired up yet",
+    "test": "echo test script not wired up yet",
+    "test:concurrency": "echo concurrency test script not wired up yet",
+    "build": "echo build script not wired up yet"
+  }
+}
