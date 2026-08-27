@@ -6,7 +6,14 @@
     "@cme/engine": "workspace:*",
     "@cme/shared": "workspace:*",
     "@cme/database": "workspace:*",
+    "@cme/redis": "workspace:*",
     "zod": "^3.23.8",
-    "ioredis": "^5.4.1"
+    "ioredis": "^5.4.1",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "typescript": "^7.0.2",
+    "@types/node": "^26.3.0"
   }
 }

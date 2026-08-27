@@ -1,7 +1,7 @@
 {
   "name": "@cme/database",
   "version": "0.1.0",
-  "main": "src/schema.ts",
+  "main": "src/index.ts",
   "dependencies": {
     "@cme/shared": "workspace:*",
     "drizzle-orm": "^0.45.2",

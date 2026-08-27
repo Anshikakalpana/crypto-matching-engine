@@ -1,11 +1,15 @@
-import Redis from "ioredis";
+import { drizzle } from "drizzle-orm/node-postgres";
+import { Pool } from "pg";
+import * as schema from "./schema";
 
-let client: Redis | null = null;
+let db: ReturnType<typeof drizzle> | null = null;
 
-export function getRedisClient(): Redis {
-  if (!client) {
-    const url = process.env.REDIS_URL ?? "redis://localhost:6379";
-    client = new Redis(url);
+export function getDb() {
+  if (!db) {
+    const connectionString =
+      process.env.DATABASE_URL ?? "postgresql://postgres:postgres@localhost:5432/matching_engine";
+    const pool = new Pool({ connectionString });
+    db = drizzle(pool, { schema });
   }
-  return client;
+  return db;
 }

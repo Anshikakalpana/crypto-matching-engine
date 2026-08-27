@@ -1,0 +1,12 @@
+{
+  "name": "@cme/tests",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@cme/engine": "workspace:*",
+    "@cme/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  }
+}
