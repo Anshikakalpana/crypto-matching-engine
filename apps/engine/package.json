@@ -4,5 +4,10 @@
   "main": "src/matching-engine.ts",
   "dependencies": {
     "@cme/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^26.3.0",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.11"
   }
 }
